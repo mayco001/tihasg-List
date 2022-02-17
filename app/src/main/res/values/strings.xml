@@ -3,4 +3,22 @@
     <string name="androidM">Desenvolvedor Android(Kotlin)</string>
     <string name="androidCM">CEO/Desenvolvedor Android</string>
     <string name="androidF">Desenvolvedora Android(Kotlin)</string>
+    <string name="funcionario">Funcionario:</string>
+    <string name="github">github:</string>
+    <string name="linkedin">linkedin:</string>
+    <string name="cargo">Cargo:</string>
+
+    <!--Github-->
+    <string name="anelGithub">"https://github.com/Tawane-Teles"</string>
+    <string name="tiagoGithub">"https://github.com/tihasg"</string>
+    <string name="michaelGithub">"https://github.com/mayco001"</string>
+
+    <!--linkedin-->
+    <string name="anelLinkedin">"https://www.linkedin.com/in/tawane-pereira"</string>
+    <string name="tiagoLinkedin">""</string>
+    <string name="felipeLinkedin">"https://www.linkedin.com/in/felipe-rodrigues"</string>
+    <string name="fernandaLinkedin">"https://www.linkedin.com/in/fernanda-rodrigues"</string>
+    <string name="luizLinkedin">"https://www.linkedin.com/in/luiz-fernando-rodrigues"</string>
+    <string name="michaelLinkedin">"https://www.linkedin.com/in/michaelvilela/"</string>
+
 </resources>

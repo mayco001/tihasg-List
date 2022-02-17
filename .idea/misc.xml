@@ -5,9 +5,12 @@
       <map>
         <entry key="..\:/Projetos Android/TihasgList/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Projetos Android/TihasgList/app/src/main/res/layout/activity_perfil.xml" value="0.3333333333333333" />
+        <entry key="..\:/Projetos Android/tihasg-List/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Projetos Android/tihasg-List/app/src/main/res/layout/activity_perfil.xml" value="0.75" />
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

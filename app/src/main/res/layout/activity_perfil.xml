@@ -1,96 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".PerfilActivity">
+    android:layout_height="wrap_content">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/retangulo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginBottom="30dp"
-        android:layout_marginRight="260dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        app:cardElevation="2dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="5dp">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txt_employee"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:textColor="@color/gray_black"
-        android:layout_marginTop="20dp"
-        android:text="Funcionario: "
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toRightOf="@+id/retangulo"
-        app:layout_constraintTop_toTopOf="@+id/retangulo" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/employee"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="@+id/txt_employee"
-        app:layout_constraintTop_toTopOf="@+id/txt_employee" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txt_office"
-        android:layout_width="wrap_content"
-        android:textColor="@color/gray_black"
-        android:layout_height="wrap_content"
-        android:text="Cargo: "
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="@+id/txt_employee"
-        app:layout_constraintTop_toBottomOf="@+id/txt_employee" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="wrap_content"
-        android:id="@+id/office"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="@+id/txt_office"
-        app:layout_constraintTop_toTopOf="@+id/txt_office" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txt_github"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="github: "
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="@color/gray_black"
-        app:layout_constraintLeft_toLeftOf="@+id/txt_office"
-        app:layout_constraintTop_toBottomOf="@+id/txt_office" />
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="wrap_content"
-        android:id="@+id/github"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="@+id/txt_github"
-        app:layout_constraintTop_toTopOf="@+id/txt_github" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txt_linkedin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="linkedin: "
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:textColor="@color/gray_black"
-        app:layout_constraintLeft_toLeftOf="@+id/txt_github"
-        app:layout_constraintTop_toBottomOf="@+id/txt_github" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="wrap_content"
-        android:id="@+id/linkedin"
-        android:layout_height="wrap_content"
-        android:maxWidth="200sp"
-        app:layout_constraintLeft_toRightOf="@+id/txt_linkedin"
-        app:layout_constraintTop_toTopOf="@+id/txt_linkedin" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/retangulo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="49dp"
+                android:layout_marginEnd="260dp"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_employee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/funcionario"
+                android:textColor="@color/gray_black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/txt_office"
+                app:layout_constraintLeft_toRightOf="@+id/retangulo"
+                app:layout_constraintTop_toTopOf="@+id/retangulo" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/employee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@+id/txt_employee"
+                app:layout_constraintTop_toTopOf="@+id/txt_employee" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_office"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="@string/cargo"
+                android:textColor="@color/gray_black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/txt_github"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_employee"
+                app:layout_constraintTop_toBottomOf="@+id/txt_employee" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/office"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_office"
+                app:layout_constraintLeft_toRightOf="@+id/txt_office"
+                app:layout_constraintTop_toTopOf="@+id/txt_office" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_github"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="@string/github"
+                android:textColor="@color/gray_black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/txt_linkedin"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_office"
+                app:layout_constraintTop_toBottomOf="@+id/txt_office" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/github"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="400sp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_github"
+                app:layout_constraintLeft_toRightOf="@+id/txt_github"
+                app:layout_constraintTop_toTopOf="@+id/txt_github" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_linkedin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="@string/linkedin"
+                android:textColor="@color/gray_black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/retangulo"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_github"
+                app:layout_constraintTop_toBottomOf="@+id/txt_github" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/linkedin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200sp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintLeft_toRightOf="@+id/txt_linkedin"
+                app:layout_constraintTop_toTopOf="@+id/txt_linkedin"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_linkedin"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
+
+

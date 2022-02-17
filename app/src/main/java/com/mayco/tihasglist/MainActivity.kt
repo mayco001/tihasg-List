@@ -17,7 +17,6 @@ private var pesquisa: SearchView? = null
 private var adapterUser = UserAdapter()
 private var listaName: RecyclerView? = null
 
-
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,29 +26,29 @@ class MainActivity : AppCompatActivity() {
             NomeDeUsuario(
                 employee = TIAGO,
                 image = R.drawable.tiago,
-                github = "https://github.com/tihasg",
+                github = getString(R.string.tiagoGithub),
                 linkedin = "",
                 office = getString(R.string.androidCM)
             ),
             NomeDeUsuario(
                 employee = ANEL,
                 image = R.drawable.anel,
-                github = "https://github.com/Tawane-Teles",
-                linkedin = "https://www.linkedin.com/in/tawane-pereira-6660b58a",
+                github = getString(R.string.anelGithub),
+                linkedin = getString(R.string.anelLinkedin),
                 office = getString(R.string.androidF)
             ),
             NomeDeUsuario(
                 employee = FELIPE,
                 image = R.drawable.felipe,
                 github = "",
-                linkedin = "https://www.linkedin.com/in/felipe-rodrigues-71a402128/",
+                linkedin = getString(R.string.felipeLinkedin),
                 office = getString(R.string.androidM)
             ),
             NomeDeUsuario(
                 employee = FERNANDA,
                 image = R.drawable.fernanda,
                 github = "",
-                linkedin = "https://www.linkedin.com/in/fernanda-rodrigues-98b610208",
+                linkedin = getString(R.string.fernandaLinkedin),
                 office = getString(R.string.androidF)
 
             ),
@@ -57,29 +56,26 @@ class MainActivity : AppCompatActivity() {
                 employee = LUIZ,
                 image = R.drawable.luiz,
                 github = "",
-                linkedin = "https://www.linkedin.com/in/luiz-fernando-rodrigues-69570719b",
+                linkedin = getString(R.string.luizLinkedin),
                 office = getString(R.string.androidM)
             ),
             NomeDeUsuario(
                 employee = MICHAEL,
                 image = R.drawable.ic_supervised_user,
-                github = "ttps://github.com/mayco001",
-                linkedin = "https://www.linkedin.com/in/mayco-vilela-a36605134",
+                github = getString(R.string.michaelGithub),
+                linkedin = getString(R.string.michaelLinkedin),
                 office = getString(R.string.androidM)
             ),
 
         )
 
-
         listaName = findViewById(R.id.recy)
         pesquisa = findViewById(R.id.btn_search)
 
         adapterUser.items = names
-        adapterUser.NameList = names
+        adapterUser.nameList = names
         seturRecyclerView()
         adapterUser.notifyDataSetChanged()
-
-
 
         pesquisa?.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
@@ -93,7 +89,6 @@ class MainActivity : AppCompatActivity() {
             }
         })
         seturRecyclerView()
-
     }
 
     private fun seturRecyclerView() {
